@@ -1288,30 +1288,10 @@ body {
   
   
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
   .lightsource {
     --side: min(3vw, 3vh);
     --angle: -41.8deg;
-    --color: #ffc600;
+    --color: #020082;
     top: 50%; left: 50%;
     width: calc(var(--side) * 1.62);
     height: calc(var(--side) * 1.54);

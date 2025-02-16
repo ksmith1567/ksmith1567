@@ -1,0 +1,82 @@
+html {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 18px;
+}
+
+
+.image-container {
+    position: relative;
+    height:100vh;
+    width: 100%;
+    background-image: url("funny reddit.PNG");
+    background-repeat: no-repeat;
+    background-size: 75% auto;
+    background-position: center top;
+    background-attachment: scroll;
+}
+
+    .text-block1 {
+        width: 150px;
+        height: 100px;
+        position: absolute;
+        background-color: red;
+        text-align: center;
+        color: white; 
+        bottom: 5%;
+        right: 15%;
+        border-color: black;
+        border-style: solid;
+        border-width: 2.5px;
+
+    }
+
+    .text-block2 {
+        width: 150px;
+        height: 100px;
+        position: absolute;
+        background-color: blue;
+        text-align: center;
+        color: white; 
+        bottom: 5%;
+        left: 15%;
+        border-color: black;
+        border-style: solid;
+        border-width: 2.5px;
+    }
+
+    .text-block3 {
+        width: 150px;
+        height: 90px;
+        position: absolute;
+        background-color: white;
+        text-align: center;
+        color: black; 
+        bottom: 5%;
+        left: 50%;
+        transform: translateX(-50%);
+        border-style: double;
+        border-width: 5px;
+    }
+
+    .score1 {
+        position: absolute;
+        color: white;
+        bottom: 0%;
+        left: 33%;
+        font-size: 60px;
+        line-height: 30px;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: blue;
+      }
+    
+
+    .score2 {
+        position: absolute;
+        color: white;
+        bottom: 0%;
+        right: 33%;
+        font-size: 60px;
+        line-height: 30px;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: red;
+    }

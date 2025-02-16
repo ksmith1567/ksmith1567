@@ -1,0 +1,100 @@
+body { 
+	background: oklch(0% 10% 2deg); 
+	background-size: contain;
+	margin: 0 auto;
+	height: 90dvh;
+	width: 90dvw;
+	overflow: hidden;
+}
+.container {
+	display: grid;
+	align-content: center;
+	justify-content: center;
+	
+	filter: url("#morph");
+	
+	margin: 3% auto;
+	height: 100%;
+	width: 100%;
+}
+
+.blob {	
+	--min: 2rem;
+	--d: clamp(var(--min), 8dvw, calc(var(--min) * 2));
+	background: var(--bg, white);
+	border-radius: 1dvw;
+	height: var(--d);
+	width: var(--d);
+	
+	filter: blur(10px);
+	
+	animation-name: move;
+	animation-delay: var(--delay, 0s);
+	animation-duration: var(--duration, 1.5s);
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: ease-in-out;
+	
+	&:nth-of-type(even) {
+		margin-left: -25%;
+	}
+	
+	/* white */
+	&:nth-of-type(1) {
+		/* --bg: oklch(80% 70% 40deg); */
+		--min: 1.5rem;
+	}
+	
+	/* orange changed to pink*/
+	&:nth-of-type(2) {
+		--bg: oklch(70% 45% 345deg);
+		/* --min: 3rem; */
+		--delay: 2s;
+	}
+	
+	/* yellow changed to purple*/
+	&:nth-of-type(3) {
+		--bg: oklch(70% 45% 300deg);
+		--min: 4rem;
+		--delay: 1s;
+	}
+	
+	/* green to yellow*/
+	&:nth-of-type(4) {
+		--bg: oklch(90% 80% 90deg);
+		--min: 1.5rem;
+		--delay: 3.25s;
+	}
+	
+	/* green-blue */
+	&:nth-of-type(5) {
+		--bg: oklch(50% 20% 190deg);
+		--min: 2rem;
+		--delay: 2.25s;
+	}
+	
+	/* indigo */
+	&:nth-of-type(6) {
+		--bg: oklch(60% 60% 280deg);
+		--min: 3rem;
+		--delay: .5s;
+	}	
+	
+	/* purple to orange*/
+	&:nth-of-type(7) {
+		--bg: oklch(80% 70% 50deg);
+		--min: 2rem;
+		--delay: 2s;
+	}
+	
+	/* pink to white */
+	&:nth-of-type(8) {
+		--bg: oklch(80% 70% 50deg);
+		--min: 1.25rem;
+		--delay: 3s;
+	}
+}
+
+@keyframes move {
+	to { margin-left: 75%; }
+}

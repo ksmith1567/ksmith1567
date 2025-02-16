@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>webdev5</title>
+    <link rel="stylesheet" href="webdev5.css">
+</head>
+<body>
+    <div class="container">
+        <div class="blob"></div>
+        <div class="blob"></div>
+        <div class="blob"></div>	
+        <div class="blob"></div>
+        <div class="blob"></div>
+        <div class="blob"></div>
+        <div class="blob"></div>
+        <div class="blob"></div>
+    </div>
+    
+    <svg>
+        <defs>
+            <filter id="morph">
+                <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="20" />
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -6" result="blob" />
+                <feBlend in2="blob" in="SourceGraphic" result="mix" />
+            </filter>
+        </defs>
+    </svg>
+</body>
+</html>

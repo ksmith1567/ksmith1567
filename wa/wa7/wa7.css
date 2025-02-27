@@ -1,0 +1,84 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: lightblue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+nav{
+    height: 50vh;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height:20px;
+    background-color: coral;
+}
+
+nav a{
+    width:10vw;
+    text-align: center;
+    text-decoration: none;
+    color:navy;
+    transition-property: color;
+    transition-duration: 0.5s;
+}
+
+nav a:hover{
+    color: white;
+}
+
+img{
+    width:50vw;
+    height:50vh;  
+}
+
+img:hover{
+    animation:rotate 5s forwards;
+}
+
+@keyframes rotate{
+    0% {
+        transform:rotate(0deg);
+    }
+    100% {
+        transform:rotate(360deg);
+    }
+}
+
+#red-ball{
+    background-color: blue;
+    width: 20px;
+    height:20px;
+    border-radius: 50%;
+    position: absolute;
+    left:5vw;
+    top:0;
+    animation-name: bouncyball;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+}
+
+@keyframes bouncyball{
+
+    0% {
+        translate: 0 0;
+    }
+    
+    25% {
+        translate: 90vw 0; 
+    }
+    
+    50% {
+        translate: 90vw 90vh;
+    }
+    
+    75% {
+        translate: 0vw 90vh;
+    }
+    
+    100% {
+        translate: 0 0;
+    }
+}

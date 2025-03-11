@@ -1,0 +1,59 @@
+@import url(https://fonts.googleapis.com/css2?family=Alex+Brush&family=Charm:wght@400;700&display=swaphttps://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap);
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    color: rgb(171, 171, 222);
+    background: linear-gradient(to bottom, rgb(1, 1, 67), black);
+}
+
+header {
+    font-family: "Charm", cursive;
+    font-size: 2rem;
+    text-align: center;
+}
+
+h3 {
+    font-family: "Charm", cursive;
+    font-size: 3rem;
+}
+
+.concertscontainer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    min-height: 100vh;
+}
+
+.concert {
+    display: flex;
+    flex-direction: column;
+    height: 35rem;
+    width: auto;
+    border: 2px solid white;
+    flex: 2;
+    padding: 2rem;
+    justify-content: space-between;
+    line-height: justify;
+    text-align: center;
+}
+
+.concert strong {
+    font-family: "Charm", cursive;
+    font-size: 2rem;
+}
+
+.concert p, .concert h4 {
+    visibility: hidden;
+}
+
+.concert:hover p, .concert:hover h4 {
+    visibility: visible;
+    font-size: 1.5rem;
+}
+
+.concert:hover{
+    height: auto;
+}
+
+
+

@@ -35,8 +35,8 @@ h3 {
 .concert {
     display: flex;
     background-color: hsla(0, 0%, 100%, 0.3);
-    height: 18rem;
-    width: 18rem;
+    height: 20rem;
+    width: 20rem;
     border-radius: 50%;
     padding: 2rem;
     text-align: center;

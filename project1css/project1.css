@@ -1,113 +1,111 @@
 @import url(https://use.typekit.net/lkm5lyj.css);
 
 @media screen and (min-width: 1500px) {
-body {
-    font-family: "nasalization", sans-serif;
-    font-size: 16px;
-    color: rgb(115, 221, 58);
-    background: linear-gradient(to bottom, hsla(240, 97%, 23%, 100%), black);
-    background-repeat: no-repeat;
-    background-attachment: fixed; 
+    body {
+        font-family: "nasalization", sans-serif;
+        font-size: 16px;
+        color: rgb(115, 221, 58);
+        background: linear-gradient(to bottom, hsla(240, 97%, 23%, 100%), black);
+        background-repeat: no-repeat;
+        background-attachment: fixed; 
+    }
+
+    header {
+        font-size: 3rem;
+        text-align: center;
+        margin-top: 10rem;
+    }
+
+    h4 {
+        margin-top: 6rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+        margin-top: 1rem;
+    }
+
+    .concertscontainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; 
+        position: relative;
+        min-height: 100vh;  
+    }
+
+    .concert {
+        display: flex;
+        background-color: hsla(0, 0%, 100%, 0.3);
+        height: 30rem;
+        width: 30rem;
+        border-radius: 50%;
+        padding: 2rem;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+    }
+
+    #concert1 { top: 3rem; left: 10rem; }
+    #concert2 { top: 13rem; right: 10rem; }
+
+    #concert3 { top: 41rem; left: 10rem; }
+    #concert4 { top: 51rem; right: 10rem; }
+
+    #concert5 { top: 79rem; left: 10rem; }
+    #concert6 { top: 89rem; right: 10rem; }
+
+    #concert7 { top: 117rem; left: 10rem; }
+    #concert8 { top: 127rem; right: 10rem; }
+
+    #concert9 { top: 155rem; left: 10rem; }
+    #concert10 { top: 165rem; right: 10rem; }
+
+
+    .concert p, .concert h5, .concert strong {
+        font-family: "roc-grotesk";
+        color: hsl(0, 86%, 31%);
+    }
+
+    .concert strong{
+        color: hsl(240, 97%, 23%);
+    }
+
+    .concert p, .concert h5, .concert strong {
+        visibility: hidden;
+    }
+
+    .concert:hover {
+        height: 72rem;
+        width: 72rem;
+        z-index: 10;
+        background-color: white;
+    }
+
+    .concert:hover h5 {
+        visibility: visible;
+        font-family: "roc-grotesk-wide", sans-serif;
+        font-size: 1.3rem;
+        max-width: 90%
+
+    }
+
+    .concert:hover p, .concert:hover strong, .concert:hover h4, .concert:hover h3 {
+        visibility: visible;
+        font-size: 1.3rem;
+        margin-top: 1rem;
+        max-width: 80%;
+    }
+
+    .concert:hover p {
+        max-width: 70%;
+    }
+
+    .concert:hover h4 {
+        margin-top: 10rem;
+    }
 }
 
-header {
-    font-size: 3rem;
-    text-align: center;
-}
-
-h4 {
-    margin-top: 6rem;
-}
-
-h3 {
-    font-size: 2rem;
-    margin-top: 1rem;
-}
-
-.concertscontainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; 
-    position: relative;
-    min-height: 100vh;  
-}
-
-.concert {
-    display: flex;
-    background-color: hsla(0, 0%, 100%, 0.3);
-    height: 30rem;
-    width: 30rem;
-    border-radius: 50%;
-    padding: 2rem;
-    text-align: center;
-    align-items: center;
-    flex-direction: column;
-    position: absolute;
-    margin: 2rem;
-}
-
-#concert1 { top: 3rem; left: 5rem; }
-#concert2 { top: 13rem; right: 5rem; }
-
-#concert3 { top: 41rem; left: 5rem; }
-#concert4 { top: 51rem; right: 5rem; }
-
-#concert5 { top: 79rem; left: 5rem; }
-#concert6 { top: 89rem; right: 5rem; }
-
-#concert7 { top: 117rem; left: 5rem; }
-#concert8 { top: 127rem; right: 5rem; }
-
-#concert9 { top: 155rem; left: 5rem; }
-#concert10 { top: 165rem; right: 5rem; }
-
-
-.concert p, .concert h5, .concert strong {
-    font-family: "roc-grotesk";
-    color: hsl(0, 86%, 31%);
-}
-
-.concert strong{
-    color: hsl(240, 97%, 23%);
-}
-
-.concert p, .concert h5, .concert strong {
-    visibility: hidden;
-}
-
-.concert:hover {
-    height: 76.5rem;
-    width: 76.5rem;
-    z-index: 10;
-    background-color: white;
-}
-
-.concert:hover h5 {
-    visibility: visible;
-    font-family: "roc-grotesk-wide", sans-serif;
-    font-size: 1.5rem;
-    max-width: 90%
-
-}
-
-.concert:hover p, .concert:hover strong, .concert:hover h4, .concert:hover h3 {
-    visibility: visible;
-    font-size: 1.5rem;
-    margin-top: 1rem;
-    max-width: 80%;
-}
-
-.concert:hover p {
-    max-width: 70%;
-}
-
-.concert:hover h4 {
-    margin-top: 10rem;
-}
-
-
-
-}
 
 @media screen and (max-width: 400px) {
 
@@ -208,6 +206,4 @@ h3 {
         margin-top: 2rem;
     }
     
-    
-    
-    }
+}

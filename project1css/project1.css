@@ -16,12 +16,12 @@ header {
 }
 
 h4 {
-    margin-top: 2rem;
+    margin-top: 6rem;
 }
 
 h3 {
-    font-size: 1.3rem;
-    margin-top: -0.5rem;
+    font-size: 2rem;
+    margin-top: 1rem;
 }
 
 .concertscontainer {
@@ -29,14 +29,14 @@ h3 {
     flex-wrap: wrap;
     justify-content: center; 
     position: relative;
-    height: 100vh;  
+    min-height: 100vh;  
 }
 
 .concert {
     display: flex;
     background-color: hsla(0, 0%, 100%, 0.3);
-    height: 18rem;
-    width: 18rem;
+    height: 30rem;
+    width: 30rem;
     border-radius: 50%;
     padding: 2rem;
     text-align: center;
@@ -46,20 +46,20 @@ h3 {
     margin: 2rem;
 }
 
-#concert1 { top: 2rem; left: 25rem; }
-#concert2 { top: 12rem; left: 80rem; }
+#concert1 { top: 3rem; left: 15rem; }
+#concert2 { top: 13rem; right: 15rem; }
 
-#concert3 { top: 30rem; left: 25rem; }
-#concert4 { top: 40rem; left: 80rem; }
+#concert3 { top: 41rem; left: 15rem; }
+#concert4 { top: 51rem; right: 15rem; }
 
-#concert5 { top: 58rem; left: 25rem; }
-#concert6 { top: 68rem; left: 80rem; }
+#concert5 { top: 79rem; left: 15rem; }
+#concert6 { top: 89rem; right: 15rem; }
 
-#concert7 { top: 86rem; left: 25rem; }
-#concert8 { top: 96rem; left: 80rem; }
+#concert7 { top: 117rem; left: 15rem; }
+#concert8 { top: 127rem; right: 15rem; }
 
-#concert9 { top: 114rem; left: 25rem; }
-#concert10 { top: 124rem; left: 80rem; }
+#concert9 { top: 155rem; left: 15rem; }
+#concert10 { top: 165rem; right: 15rem; }
 
 
 .concert p, .concert h5, .concert strong {
@@ -76,8 +76,8 @@ h3 {
 }
 
 .concert:hover {
-    height: 80rem;
-    width: 80rem;
+    height: 95rem;
+    width: 95rem;
     z-index: 10;
     background-color: white;
 }
@@ -92,7 +92,7 @@ h3 {
 
 .concert:hover p, .concert:hover strong, .concert:hover h4, .concert:hover h3 {
     visibility: visible;
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-top: 1rem;
     max-width: 80%;
 }
@@ -102,24 +102,15 @@ h3 {
 }
 
 .concert:hover h4 {
-    margin-top: 8rem;
+    margin-top: 10rem;
 }
 
 
-#concert1:hover { top: 55%; left: 50%; transform: translate(-50%, -50%); }
-#concert2:hover { top: 55%; left: 50%; transform: translate(-50%, -50%); }
-#concert3:hover { top: 55%; left: 50%; transform: translate(-50%, -50%); }
-#concert4:hover { top: 55%; left: 50%; transform: translate(-50%, -50%); }
-#concert5:hover { top: 55%; left: 50%; transform: translate(-50%, -50%); }
-#concert6:hover { top: 55%; left: 50%; transform: translate(-50%, -50%); }
-#concert7:hover { top: 55%; left: 50%; transform: translate(-50%, -50%); }
-#concert8:hover { top: 55%; left: 50%; transform: translate(-50%, -50%); }
-#concert9:hover { top: 55%; left: 50%; transform: translate(-50%, -50%); }
-#concert10:hover { top: 55%; left: 50%; transform: translate(-50%, -50%); }
 
 }
 
 @media screen and (max-width: 400px) {
+
     body {
         font-family: "nasalization", sans-serif;
         font-size: 16px;
@@ -132,15 +123,12 @@ h3 {
     header {
         font-size: 1rem;
         text-align: center;
+        margin-top: 5rem;
     }
     
-    h4 {
-        margin-top: 2rem;
-    }
     
     h3 {
-        font-size: 1.5rem;
-        margin-top: -1rem;
+        font-size: 1rem;
     }
     
     .concertscontainer {
@@ -148,33 +136,33 @@ h3 {
         flex-wrap: wrap;
         justify-content: center; 
         position: relative;
-        height: 100vh;  
+        min-height: 100vh;  
     }
     
     .concert {
         display: flex;
         background-color: hsla(0, 0%, 100%, 0.3);
-        height: 18rem;
-        width: 18rem;
-        border-radius: 50%;
-        padding: 2rem;
+        height: 12.5rem;
+        width: 20rem;
+        padding: 1rem;
         text-align: center;
         align-items: center;
         flex-direction: column;
         position: absolute;
-        margin: 2rem;
+        margin: 1rem;
     }
     
+        
     #concert1 { top: 1rem; }
-    #concert2 { top: 25rem; }
-    #concert3 { top: 50rem; }
-    #concert4 { top: 75rem; }
-    #concert5 { top: 100rem; }
-    #concert6 { top: 125rem; }
-    #concert7 { top: 150rem; }
-    #concert8 { top: 175rem; }
-    #concert9 { top: 200rem; }
-    #concert10 { top: 225rem; }
+    #concert2 { top: 20rem; }
+    #concert3 { top: 39rem; }
+    #concert4 { top: 58rem; }
+    #concert5 { top: 77rem; }
+    #concert6 { top: 96rem; }
+    #concert7 { top: 115rem; }
+    #concert8 { top: 134rem; }
+    #concert9 { top: 153rem; }
+    #concert10 { top: 172rem; }
     
     
     .concert p, .concert h5, .concert strong {
@@ -191,8 +179,8 @@ h3 {
     }
     
     .concert:hover {
-        height: 80rem;
-        width: 80rem;
+        height: auto;
+        width: 20rem;
         z-index: 10;
         background-color: white;
     }
@@ -200,36 +188,26 @@ h3 {
     .concert:hover h5 {
         visibility: visible;
         font-family: "roc-grotesk-wide", sans-serif;
-        font-size: 2rem;
+        font-size: 1rem;
         max-width: 90%
     
     }
     
     .concert:hover p, .concert:hover strong, .concert:hover h4, .concert:hover h3 {
         visibility: visible;
-        font-size: 1.5rem;
+        font-size: 1rem;
         margin-top: 1rem;
-        max-width: 80%;
+        max-width: 90%;
     }
     
     .concert:hover p {
-        max-width: 70%;
+        max-width: 85%;
     }
     
     .concert:hover h4 {
-        margin-top: 8rem;
+        margin-top: 2rem;
     }
     
     
-    #concert1:hover { top: 55%; left: 50%; transform: translate(-50%, -50%); }
-    #concert2:hover { top: 55%; left: 50%; transform: translate(-50%, -50%); }
-    #concert3:hover { top: 55%; left: 50%; transform: translate(-50%, -50%); }
-    #concert4:hover { top: 55%; left: 50%; transform: translate(-50%, -50%); }
-    #concert5:hover { top: 55%; left: 50%; transform: translate(-50%, -50%); }
-    #concert6:hover { top: 55%; left: 50%; transform: translate(-50%, -50%); }
-    #concert7:hover { top: 55%; left: 50%; transform: translate(-50%, -50%); }
-    #concert8:hover { top: 55%; left: 50%; transform: translate(-50%, -50%); }
-    #concert9:hover { top: 55%; left: 50%; transform: translate(-50%, -50%); }
-    #concert10:hover { top: 55%; left: 50%; transform: translate(-50%, -50%); }
     
     }

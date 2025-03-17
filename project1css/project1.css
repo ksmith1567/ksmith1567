@@ -46,20 +46,20 @@ h3 {
     margin: 2rem;
 }
 
-#concert1 { top: 3rem; left: 15rem; }
-#concert2 { top: 13rem; right: 15rem; }
+#concert1 { top: 3rem; left: 5rem; }
+#concert2 { top: 13rem; right: 5rem; }
 
-#concert3 { top: 41rem; left: 15rem; }
-#concert4 { top: 51rem; right: 15rem; }
+#concert3 { top: 41rem; left: 5rem; }
+#concert4 { top: 51rem; right: 5rem; }
 
-#concert5 { top: 79rem; left: 15rem; }
-#concert6 { top: 89rem; right: 15rem; }
+#concert5 { top: 79rem; left: 5rem; }
+#concert6 { top: 89rem; right: 5rem; }
 
-#concert7 { top: 117rem; left: 15rem; }
-#concert8 { top: 127rem; right: 15rem; }
+#concert7 { top: 117rem; left: 5rem; }
+#concert8 { top: 127rem; right: 5rem; }
 
-#concert9 { top: 155rem; left: 15rem; }
-#concert10 { top: 165rem; right: 15rem; }
+#concert9 { top: 155rem; left: 5rem; }
+#concert10 { top: 165rem; right: 5rem; }
 
 
 .concert p, .concert h5, .concert strong {
@@ -76,8 +76,8 @@ h3 {
 }
 
 .concert:hover {
-    height: 95rem;
-    width: 95rem;
+    height: 76.5rem;
+    width: 76.5rem;
     z-index: 10;
     background-color: white;
 }
@@ -85,14 +85,14 @@ h3 {
 .concert:hover h5 {
     visibility: visible;
     font-family: "roc-grotesk-wide", sans-serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
     max-width: 90%
 
 }
 
 .concert:hover p, .concert:hover strong, .concert:hover h4, .concert:hover h3 {
     visibility: visible;
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-top: 1rem;
     max-width: 80%;
 }

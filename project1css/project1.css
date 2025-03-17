@@ -46,20 +46,20 @@ h3 {
     margin: 2rem;
 }
 
-#concert1 { top: 2rem; left: 18rem; }
-#concert2 { top: 12rem; left: 56rem; }
+#concert1 { top: 2rem; left: 25rem; }
+#concert2 { top: 12rem; left: 80rem; }
 
-#concert3 { top: 30rem; left: 18rem; }
-#concert4 { top: 40rem; left: 56rem; }
+#concert3 { top: 30rem; left: 25rem; }
+#concert4 { top: 40rem; left: 80rem; }
 
-#concert5 { top: 58rem; left: 18rem; }
+#concert5 { top: 58rem; left: 25rem; }
 #concert6 { top: 68rem; left: 56rem; }
 
-#concert7 { top: 86rem; left: 18rem; }
+#concert7 { top: 86rem; left: 80rem; }
 #concert8 { top: 96rem; left: 56rem; }
 
-#concert9 { top: 114rem; left: 18rem; }
-#concert10 { top: 124rem; left: 56rem; }
+#concert9 { top: 114rem; left: 25rem; }
+#concert10 { top: 124rem; left: 80rem; }
 
 
 .concert p, .concert h5, .concert strong {

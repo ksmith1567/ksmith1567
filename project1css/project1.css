@@ -7,7 +7,7 @@
         color: rgb(115, 221, 58);
         background: linear-gradient(to bottom, hsla(240, 97%, 23%, 100%), black);
         background-repeat: no-repeat;
-        background-attachment: fixed; 
+        background-attachment: fixed;
     }
 
     header {
@@ -28,9 +28,9 @@
     .concertscontainer {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center; 
+        justify-content: center;
         position: relative;
-        min-height: 100vh;  
+        min-height: 100vh;
     }
 
     .concert {
@@ -61,6 +61,111 @@
     #concert9 { top: 155rem; left: 10rem; }
     #concert10 { top: 165rem; right: 10rem; }
 
+    .concert p, .concert h5, .concert strong {
+        font-family: "roc-grotesk";
+        color: hsl(0, 86%, 31%);
+    }
+
+    .concert strong{
+        color: hsl(240, 97%, 23%);
+    }
+
+    .concert p, .concert h5, .concert strong {
+        visibility: hidden;
+    }
+
+    .concert:hover {
+        height: 72rem;
+        width: 72rem;
+        z-index: 10;
+        background-color: white;
+    }
+
+    .concert:hover h5 {
+        visibility: visible;
+        font-family: "roc-grotesk-wide", sans-serif;
+        font-size: 1.3rem;
+        max-width: 90%
+    }
+
+    .concert:hover p, .concert:hover strong, .concert:hover h4, .concert:hover h3 {
+        visibility: visible;
+        font-size: 1.3rem;
+        margin-top: 1rem;
+        max-width: 80%;
+    }
+
+    .concert:hover p {
+        max-width: 70%;
+    }
+
+    .concert:hover h4 {
+        margin-top: 10rem;
+    }
+}
+
+@media screen and (max-width: 1500px) and (min-width: 701px) {
+    body {
+        font-family: "nasalization", sans-serif;
+        font-size: 16px;
+        color: rgb(115, 221, 58);
+        background: linear-gradient(to bottom, hsla(240, 97%, 23%, 100%), black);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    header {
+        font-size: 3rem;
+        text-align: center;
+        margin-top: 10rem;
+    }
+
+    h4 {
+        margin-top: 6rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+        margin-top: 1rem;
+    }
+
+    .concertscontainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: relative;
+        min-height: 100vh;
+    }
+
+    .concert {
+        display: flex;
+        background-color: hsla(0, 0%, 100%, 0.3);
+        height: 30rem;
+        width: 30rem;
+        border-radius: 50%;
+        padding: 2rem;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+     
+    }
+
+    
+    #concert1 { top: 3rem; }
+    #concert2 { top: 43rem; }
+
+    #concert3 { top: 83rem; }
+    #concert4 { top: 123rem; }
+
+    #concert5 { top: 163rem; }
+    #concert6 { top: 203rem; }
+
+    #concert7 { top: 243rem; }
+    #concert8 { top: 283rem; }
+
+    #concert9 { top: 323rem; }
+    #concert10 { top: 363rem; }
 
     .concert p, .concert h5, .concert strong {
         font-family: "roc-grotesk";
@@ -87,7 +192,6 @@
         font-family: "roc-grotesk-wide", sans-serif;
         font-size: 1.3rem;
         max-width: 90%
-
     }
 
     .concert:hover p, .concert:hover strong, .concert:hover h4, .concert:hover h3 {
@@ -106,37 +210,34 @@
     }
 }
 
-
-@media screen and (max-width: 400px) {
-
+@media screen and (max-width: 700px) {
     body {
         font-family: "nasalization", sans-serif;
         font-size: 16px;
         color: rgb(115, 221, 58);
         background: linear-gradient(to bottom, hsla(240, 97%, 23%, 100%), black);
         background-repeat: no-repeat;
-        background-attachment: fixed; 
+        background-attachment: fixed;
     }
-    
+
     header {
         font-size: 1rem;
         text-align: center;
         margin-top: 5rem;
     }
-    
-    
+
     h3 {
         font-size: 1rem;
     }
-    
+
     .concertscontainer {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center; 
+        justify-content: center;
         position: relative;
-        min-height: 100vh;  
+        min-height: 100vh;
     }
-    
+
     .concert {
         display: flex;
         background-color: hsla(0, 0%, 100%, 0.3);
@@ -149,8 +250,7 @@
         position: absolute;
         margin: 1rem;
     }
-    
-        
+
     #concert1 { top: 1rem; }
     #concert2 { top: 20rem; }
     #concert3 { top: 39rem; }
@@ -161,49 +261,46 @@
     #concert8 { top: 134rem; }
     #concert9 { top: 153rem; }
     #concert10 { top: 172rem; }
-    
-    
+
     .concert p, .concert h5, .concert strong {
         font-family: "roc-grotesk";
         color: hsl(0, 86%, 31%);
     }
-    
+
     .concert strong{
         color: hsl(240, 97%, 23%);
     }
-    
+
     .concert p, .concert h5, .concert strong {
         visibility: hidden;
     }
-    
+
     .concert:hover {
         height: auto;
         width: 20rem;
         z-index: 10;
         background-color: white;
     }
-    
+
     .concert:hover h5 {
         visibility: visible;
         font-family: "roc-grotesk-wide", sans-serif;
         font-size: 1rem;
         max-width: 90%
-    
     }
-    
+
     .concert:hover p, .concert:hover strong, .concert:hover h4, .concert:hover h3 {
         visibility: visible;
         font-size: 1rem;
         margin-top: 1rem;
         max-width: 90%;
     }
-    
+
     .concert:hover p {
         max-width: 85%;
     }
-    
+
     .concert:hover h4 {
         margin-top: 2rem;
     }
-    
 }

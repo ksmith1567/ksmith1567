@@ -8,7 +8,7 @@ function randomValueFromArray(array){
 }
 
 
-const storyText = "It was 800 fahrenheit outside, so :insertx: went for a swim. When they got to :inserty:, they sat in silence for a few moments, then :insertz:. Bob saw the whole thing and was shocked — :insertx: weighs 10 pounds, and it was a cold day.";
+const storyText = "It was 800 fahrenheit outside, so :insertx: went for a swim. When they got to :inserty:, they sat in silence for a few moments, then :insertz:. Bob saw the whole thing and was shocked — :insertx: weighs 100 pounds, and it was a cold day.";
 const insertX=["Snoop Dogg", "JoJo Siwa", "Santa"];
 const insertY= ["Denver", "the C4C", "Rockefeller Center"];
 const insertZ= ["spontaneously combusted", "melted into a puddle on the driveway", "erupted into flames"];
@@ -30,9 +30,9 @@ function result() {
   }
 
   if(document.getElementById("uk").checked) {
-    const weight = Math.round(10/14);  //converting from pounds to stones, divide by 14
+    const weight = Math.round(100/14);  //converting from pounds to stones, divide by 14
     const temperature =  Math.round((800-32)*(5/9)); //converting from fahrenheit into centigrade, F-32 times 5/9
-    newStory=newStory.replace("800 fahrenheit", `${temperature} centigrade`).replace("10 pounds", `${weight} stone`);
+    newStory=newStory.replace("800 fahrenheit", `${temperature} centigrade`).replace("100 pounds", `${weight} stone`);
   }
 
   story.textContent = newStory;

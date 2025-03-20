@@ -30,8 +30,8 @@ function result() {
   }
 
   if(document.getElementById("uk").checked) {
-    const weight = Math.round(300/14);  //converting from pounds to stones, divide by 14
-    const temperature =  Math.round((94-32)*(5/9)); //converting from fahrenheit into centigrade, F-32 times 5/9
+    const weight = Math.round(10/14);  //converting from pounds to stones, divide by 14
+    const temperature =  Math.round((800-32)*(5/9)); //converting from fahrenheit into centigrade, F-32 times 5/9
     newStory=newStory.replace("94 fahrenheit", `${temperature} centigrade`).replace("300 pounds", `${weight} stone`);
   }
 

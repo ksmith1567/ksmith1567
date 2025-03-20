@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <title>Silly story generator</title>
+
+    <style>
+      body {
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        width: 600px;
+      }
+
+      label {
+        font-weight: bold;
+      }
+
+      div {
+        padding-bottom: 30px;
+      }
+
+      input[type="text"] {
+        padding: 8px;
+        width: 100px;
+        border: solid hotpink 3px;;
+      }
+
+      p {
+        background: rgb(156, 83, 156);
+        color: black;
+        padding: 45px;
+        visibility: hidden;
+        border-radius: 50%;
+        border: dotted hotpink 5px;
+      }
+    </style>
+
+    <script type="module" src="wa10.js"></script>
+  </head>
+
+  <body>
+    <div>
+      <label for="customname">Enter a name:</label>
+      <input id="customname" type="text" placeholder="" />
+    </div>
+    <div>
+      <label for="us">US units</label
+      ><input id="us" type="radio" name="ukus" value="us" checked />
+      <label for="uk">UK units</label
+      ><input id="uk" type="radio" name="ukus" value="uk" />
+    </div>
+    <div>
+      <button class="randomize">Click here to read your random story!</button>
+    </div>
+    <!-- Thanks a lot to Willy Aguirre for his help with the code for this assessment -->
+    <p class="story"></p>
+
+  </body>
+</html>

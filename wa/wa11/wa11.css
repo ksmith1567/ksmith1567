@@ -1,0 +1,53 @@
+h1 {
+  font-family: "roc-grotesk";
+  text-align: center;
+  color: hsl(154, 88%, 20%);
+  font-size: 40px;
+}
+
+body {
+  width: 672px;
+  margin: 0 auto;
+  background-color: hsla(69, 43%, 76%, 0.743);
+}
+
+.full-img {
+  position: relative;
+  display: block;
+  width: 672px;
+  height: 820px;
+}
+
+.full-img img {
+  width: 100%;  
+  height: 100%;  
+  
+   
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 672px;
+  height: 820px;
+  background-color: rgba(0,0,0,0);
+}
+
+button {
+  border: 0;
+  background: rgba(200, 173, 198, 0.962);
+  text-shadow: 1px 1px 1px white;
+  border: 1px solid #999;
+  position: absolute;
+  cursor: pointer;
+  top: 2px;
+  left: 2px;
+}
+
+.thumb-bar img {
+  display: block;
+  width: 20%;
+  float: left;
+  cursor: pointer;
+}

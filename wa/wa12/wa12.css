@@ -140,8 +140,8 @@ header {
 }
 
 .outsideText {
-  width: 500px;
-  margin: 0px 100px;
+  width: 600px;
+  margin: 0px auto;
   font-size: 15px;
 }
 

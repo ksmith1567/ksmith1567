@@ -1,14 +1,16 @@
-var newBtn=document.querySelector('#js-new-quote').addEventListener('click', getQuote);
-var answerBtn=document.querySelector('#js-tweet').addEventListener('click', displayAnswer);
+var newBtn=document.querySelector('#js-new-joke').addEventListener('click', getJoke);
+var answerBtn=document.querySelector('#js-punchline').addEventListener('click', displayAnswer);
 
-var endpoint="https://icanhazdadjoke.com/";
-
+var endpoint="https://official-joke-api.appspot.com/jokes/random";
+var imageEndpoint="https://dog.ceo/api/breeds/image/random";
 let current = {
-    question : "",
-    answer : ""
+    setup : "",
+    punchline : ""
 };
 
-async function getQuote() {
+
+
+async function getJoke() {
     try {
         const response = await fetch(endpoint);
 
@@ -16,12 +18,14 @@ async function getQuote() {
             throw Error(response.statusText);
         }
         const json = await response.json();
-        // console.log(json);
-        displayQuote(json.question);
+        //console.log(json);
+        displayJoke(json.setup);
         
 
-        current.question=json.question;
-        current.answer=json.answer;
+        current.setup=json.setup;
+        current.punchline=json.punchline;
+
+        getDog();
 
     } catch(err){
         console.log(err);
@@ -29,13 +33,39 @@ async function getQuote() {
     }
 }
 
-function displayQuote(quote) {
-    const quoteText=document.querySelector('#js-quote-text');
-    quoteText.textContent = quote;
+async function getDog() {
+    try {
+        const response = await fetch(imageEndpoint);
+
+        if (!response.ok){
+            throw Error(response.statusText);
+        }
+        const json = await response.json();
+        //console.log(json);
+        displayImage(json.message);
+        
+
+        current.message=json.message;
+        current.status=json.status;
+
+    } catch(err){
+        console.log(err);
+        alert('Fail fetching dog image!');
+    }
+}
+
+function displayImage(imageUrl) {
+    const imageDiv=document.querySelector('#js-image');
+    imageDiv.innerHTML = `<img src="${imageUrl}" alt="Random Dog" class="dog-image">`
+}
+
+function displayJoke(joke) {
+    const jokeText=document.querySelector('#js-setup-text');
+    jokeText.textContent = joke;
 
 }
 
-// function displayAnswer() {
-//     const answerText=document.querySelector('#js-answer-text');
-//     answerText.textContent = current.answer;
-// }
+function displayAnswer() {
+    const answerText=document.querySelector('#js-punchline-text');
+    answerText.textContent = current.punchline;
+}

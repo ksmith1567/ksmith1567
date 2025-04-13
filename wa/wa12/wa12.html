@@ -6,24 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="wa12.css">
     <title>Quote Machine P2: Electric Boogaloo</title>
-</head>
+    <link rel="stylesheet" href="https://use.typekit.net/tmy8bek.css">
 <body>
+  <div class="inbox">
     <div class="app">
-        <header>Random Christmas Trivia</header>
-        <section class="quotes">
-          <div class="quote-text" id="js-quote-text"></div>
-          <div class="quote-text" id="js-answer-text"></div>
+        <header>Random Joke Machine</header>
+        <section class="jokes">
+          <div class="joke" id="js-setup-text"></div>
+          <div class="joke-text" id="js-punchline-text"></div>
+          <div class="image" id="js-image"></div>
         </section>
-        <section class="controls" >
-          <button type="button" id="js-new-quote" class="new-quote button">
-            Generate a new bit of trivia!
-          </button>
-          <button type="button" id="js-tweet" class="twitter button">
-            Show me the answer!
-          </button>
+
+      <section class="controls" >
+        <div class="button-wrapper">
+          <div class="rainbow-glow"></div>
+            <button type="button" id="js-new-joke" class="new-joke button">
+              Time for a new joke
+            </button>
+            <button type="button" id="js-punchline" class="punchline button">
+              Show me the answer!
+            </button>
+    </div>
+          
           <!-- <a class="answer button" id="js-tweet" target="_blank" rel="noreferrer">Show me the answer!</a> -->
         </section>
       </div>
       <script src="wa12.js"></script>
+      </div>
+      <p class = "outsideText">I implemented a second API that generates a random dog picture at the same time a new joke is loaded. This required a fair bit of adjusting in CSS as the container box needs to dynamically adjust its vertical height in order to fit all content, especially since each joke and picture combination take up a different amount of space.</p>
 </body>
 </html>

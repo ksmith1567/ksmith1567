@@ -1,39 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="wa12.css">
-    <title>Quote Machine P2: Electric Boogaloo</title>
-    <link rel="stylesheet" href="https://use.typekit.net/tmy8bek.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="wa12.css" />
+  <title>Quote Machine P2: Electric Boogaloo</title>
+  <link rel="stylesheet" href="https://use.typekit.net/tmy8bek.css" />
 </head>
 <body>
   <div class="inbox">
     <div class="app">
-        <header>Random Joke Machine</header>
-        <section class="jokes">
-          <div class="joke" id="js-setup-text"></div>
-          <div class="joke-text" id="js-punchline-text"></div>
-          <div class="image" id="js-image"></div>
-        </section>
+      <header>Random Joke Machine</header>
+      <section class="jokes">
+        <div class="joke" id="js-setup-text"></div>
+        <div class="joke-text" id="js-punchline-text"></div>
+        <div class="image" id="js-image"></div>
+      </section>
 
-      <section class="controls" >
+      <section class="controls">
         <div class="button-wrapper">
           <div class="rainbow-glow"></div>
-            <button type="button" id="js-new-joke" class="new-joke button">
-              Time for a new joke
-            </button>
-            <button type="button" id="js-punchline" class="punchline button">
-              Show me the answer!
-            </button>
+          <button type="button" id="js-new-joke" class="new-joke button">
+            Time for a new joke
+          </button>
+          <button type="button" id="js-punchline" class="punchline button">
+            Show me the answer!
+          </button>
+        </div>
+      </section>
     </div>
-          
-          <!-- <a class="answer button" id="js-tweet" target="_blank" rel="noreferrer">Show me the answer!</a> -->
-        </section>
-      </div>
-      <script src="wa12.js"></script>
-      
-      <p class = "outsideText">I implemented a second API that generates a random dog picture at the same time a new joke is loaded. This required a fair bit of adjusting in CSS as the container box needs to dynamically adjust its vertical height in order to fit all content, especially since each joke and picture combination take up a different amount of space.</p>
+  </div>
+
+  <!-- Script goes here after your main layout -->
+  <script src="wa12.js"></script>
+
+  <!-- Outside text paragraph goes outside the main .inbox layout -->
+  <p class="outsideText">
+    I implemented a second API that generates a random dog picture at the same time a new joke is loaded.
+    This required a fair bit of adjusting in CSS as the container box needs to dynamically adjust its vertical
+    height in order to fit all content, especially since each joke and picture combination take up a different
+    amount of space.
+  </p>
 </body>
 </html>

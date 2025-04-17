@@ -90,13 +90,13 @@
                     }}}}
         const balls = [];
     
-        while (balls.length < 5) {
+        while (balls.length < 15) {
             const size = random(10, 20);
             const ball = new Ball(
                 random(0 + size, width - size),
                 random(0 + size, height - size),
-                random(-10, 10),
-                random(-10, 10),
+                random(-20, 20),
+                random(-20, 20),
                 randomRGB(),
                 size
             );
